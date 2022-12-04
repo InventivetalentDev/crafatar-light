@@ -90,7 +90,7 @@ var skew_b = skew_a * 2; // 1.15555555
 // callback: error, image buffer
 exp.draw_model = function (rid, img, scale, overlay, is_body, slim, callback) {
     var canvas = cvs.createCanvas();
-    canvas.width = scale * 20;
+    canvas.width = scale * (is_body ? 20 : 16);
     canvas.height = scale * (is_body ? 45.1 : 18.5);
 
     var ctx = canvas.getContext("2d");
@@ -173,8 +173,8 @@ exp.draw_model = function (rid, img, scale, overlay, is_body, slim, callback) {
         var y = 0;
         var z = 0;
 
-        var z_offset = scale * 3;
-        var x_offset = scale * 2;
+        var z_offset = is_body ? (scale * 3) : (scale * 4);
+        var x_offset = is_body ? (scale * 2) : 0;
 
         if (is_body) {
             // pre-render front onto separate canvas
