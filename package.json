@@ -1,0 +1,8 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "canvas": "^2.10.2",
+    "express": "^4.18.2"
+  }
+}
