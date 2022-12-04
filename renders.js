@@ -1,3 +1,4 @@
+// https://github.com/crafatar/crafatar/blob/master/lib/renders.js
 // Skin locations are based on the work of Confuser, with 1.8 updates by Jake0oo0
 // https://github.com/confuser/serverless-mc-skin-viewer
 // Permission to use & distribute https://github.com/confuser/serverless-mc-skin-viewer/blob/master/LICENSE
