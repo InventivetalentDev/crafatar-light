@@ -1,0 +1,17 @@
+{
+  "name": "crafatar-light",
+  "description": "Fork of crafatar to render minecraft skin texture urls",
+  "keywords": [
+    "render",
+    "minecraft",
+    "skin",
+    "texture",
+    "crafatar"
+  ],
+  "repository": "https://github.com/InventivetalentDev/crafatar-light",
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
