@@ -247,6 +247,9 @@ exp.draw_model = function (rid, img, scale, overlay, is_body, slim, callback) {
             }
             callback(err, buf);
         });
+    }).catch((err) => {
+        console.error(err);
+        callback(err);
     });
 };
 
