@@ -26,6 +26,10 @@ app.get('/render', (req, res) => {
             break;
         }
     }
+    if (!allowed) {
+        res.status(403).end();
+        return;
+    }
 
     try {
         render.draw_model(undefined, url, parseInt(req.query['scale'] || '10'), req.query['overlay'] === 'true', req.query['body'] === 'true', req.query['slim'] === 'true', (err, img) => {
